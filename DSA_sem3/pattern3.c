@@ -23,21 +23,19 @@ int main(void){
         }
         printf("\n");
     }
-    
     // printing the bottom pyramid
-    
     for(i = 1; i < 3; i++){
-        // printing the spaces
         l--;
+        // printing the spaces
         for(int k = i ; k > 0; k--)
             printf("  ");
-        
         // printing the bottom left triangle
         for(j = 3 - i; j > 0; j--){
             printf("%d ", l); 
             l++;  
         }
         l--;
+        // printing the bottom right triangle
         for(j = i; j <= 1; j++){
             l--;
             printf("%d ", l);
